@@ -1,0 +1,254 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8" /> 
+    <title>DreamNest Realty - Property Listings</title> 
+  </head> 
+  <body> 
+    <!-- Header --> 
+    <header> 
+      <h1>DreamNest Realty</h1> 
+      <p>Find your perfect home with us</p> 
+ 
+      <!-- Navigation --> 
+      <nav> 
+        <a href="#search">Search Properties</a> | 
+        <a href="#listings">Property Listings</a> | 
+        <a href="#inquiry">Buyer Inquiry Form</a> 
+      </nav> 
+      <hr /> 
+    </header> 
+ 
+    <!-- Main Content --> 
+    <main> 
+      <!-- Search Filters Section --> 
+      <section id="search"> 
+        <h2>Search Properties</h2> 
+        <p>Use the filters below to narrow down your property search.</p> 
+ 
+        <form> 
+          <label for="location">Location:</label><br /> 
+          <input 
+            type="text" 
+            id="location" 
+            name="location" 
+            placeholder="Enter city / area" 
+          /><br /><br /> 
+ 
+          <label for="type">Property Type:</label><br /> 
+          <select id="type" name="type"> 
+            <option value="">Any</option> 
+            <option value="apartment">Apartment</option> 
+            <option value="house">Independent House</option> 
+            <option value="villa">Villa</option> 
+            <option value="plot">Plot</option></select 
+          ><br /><br /> 
+ 
+          <label for="budget-min">Budget (Min):</label><br /> 
+          <input 
+            type="number" 
+            id="budget-min" 
+            name="budget-min" 
+            placeholder="Min price" 
+          /><br /><br /> 
+ 
+          <label for="budget-max">Budget (Max):</label><br /> 
+          <input 
+            type="number" 
+            id="budget-max" 
+            name="budget-max" 
+            placeholder="Max price" 
+          /><br /><br /> 
+ 
+          <label for="bedrooms">Bedrooms:</label><br /> 
+          <select id="bedrooms" name="bedrooms"> 
+            <option value="">Any</option> 
+            <option value="1">1 BHK</option> 
+            <option value="2">2 BHK</option> 
+            <option value="3">3 BHK</option> 
+            <option value="4">4+ BHK</option></select 
+          ><br /><br /> 
+ 
+          <label>Property For:</label><br /> 
+          <input type="radio" id="sale" name="for" value="sale" /> 
+          <label for="sale">Sale</label><br /> 
+          <input type="radio" id="rent" name="for" value="rent" /> 
+          <label for="rent">Rent</label><br /><br /> 
+ 
+          <input type="submit" value="Search" /> 
+        </form> 
+      </section> 
+ 
+      <hr /> 
+ 
+      <!-- Property Listings Section --> 
+      <section id="listings"> 
+        <h2>Featured Property Listings</h2> 
+ 
+        <!-- Property 1 --> 
+        <article> 
+          <h3>2 BHK Apartment in Green Valley, Delhi</h3> 
+          <p><strong>Type:</strong> Apartment | <strong>For:</strong> Sale</p> 
+          <p><strong>Price:</strong> ₹65,00,000</p> 
+          <p><strong>Area:</strong> 980 sq.ft</p> 
+          <p> 
+            <strong>Highlights:</strong> Gated society, park-facing, near metro 
+            station. 
+          </p> 
+          <p><strong>Property ID:</strong> DN-101</p> 
+          <a href="#inquiry">Enquire about this property</a> 
+          <hr /> 
+        </article> 
+ 
+        <!-- Property 2 --> 
+        <article> 
+          <h3>3 BHK Independent House in Lakeview Colony, Noida</h3> 
+          <p> 
+            <strong>Type:</strong> Independent House | 
+            <strong>For:</strong> Sale 
+          </p> 
+          <p><strong>Price:</strong> ₹1,35,00,000</p> 
+          <p><strong>Area:</strong> 1800 sq.ft</p> 
+          <p> 
+            <strong>Highlights:</strong> Reserved parking, nearby school, 
+            peaceful neighborhood. 
+          </p> 
+          <p><strong>Property ID:</strong> DN-102</p> 
+          <a href="#inquiry">Enquire about this property</a> 
+          <hr /> 
+        </article> 
+ 
+        <!-- Property 3 --> 
+        <article> 
+          <h3>1 BHK Apartment near IT Park, Bengaluru</h3> 
+          <p><strong>Type:</strong> Apartment | <strong>For:</strong> Rent</p> 
+          <p><strong>Rent:</strong> ₹18,000 / month</p> 
+          <p><strong>Area:</strong> 520 sq.ft</p> 
+          <p> 
+            <strong>Highlights:</strong> Fully furnished, 24x7 security, 
+            walkable to office hubs. 
+          </p> 
+          <p><strong>Property ID:</strong> DN-103</p> 
+          <a href="#inquiry">Enquire about this property</a> 
+          <hr /> 
+        </article> 
+ 
+        <!-- Property 4 --> 
+        <article> 
+          <h3>Residential Plot in Sunrise Enclave, Pune</h3> 
+          <p><strong>Type:</strong> Plot | <strong>For:</strong> Sale</p> 
+          <p><strong>Price:</strong> ₹45,00,000</p> 
+          <p><strong>Area:</strong> 1500 sq.ft</p> 
+          <p> 
+            <strong>Highlights:</strong> Upcoming development area, wide roads, 
+            clear title. 
+          </p> 
+          <p><strong>Property ID:</strong> DN-104</p> 
+          <a href="#inquiry">Enquire about this property</a> 
+          <hr /> 
+        </article> 
+      </section> 
+ 
+      <hr /> 
+ 
+      <!-- Inquiry Form Section --> 
+      <section id="inquiry"> 
+        <h2>Property Inquiry Form</h2> 
+        <p> 
+          Interested in a property? Fill this form and we will contact you soon. 
+        </p> 
+ 
+        <form> 
+          <!-- Buyer Details --> 
+          <fieldset> 
+            <legend>Buyer Details</legend> 
+ 
+            <label for="buyer-name">Full Name:</label><br /> 
+            <input type="text" id="buyer-name" name="buyer-name" /><br /><br /> 
+ 
+            <label for="buyer-email">Email:</label><br /> 
+            <input 
+              type="email" 
+              id="buyer-email" 
+              name="buyer-email" 
+            /><br /><br /> 
+ 
+            <label for="buyer-phone">Phone Number:</label><br /> 
+            <input type="tel" id="buyer-phone" name="buyer-phone" /><br /><br /> 
+          </fieldset> 
+          <br /> 
+ 
+          <!-- Property Interest --> 
+          <fieldset> 
+            <legend>Property Interest</legend> 
+ 
+            <label for="property-id">Property ID (if any):</label><br /> 
+            <input 
+              type="text" 
+              id="property-id" 
+              name="property-id" 
+              placeholder="e.g. DN-101" 
+            /><br /><br /> 
+ 
+            <label for="city-preference">Preferred City/Area:</label><br /> 
+            <input 
+              type="text" 
+              id="city-preference" 
+              name="city-preference" 
+            /><br /><br /> 
+ 
+            <label for="budget-range">Approximate Budget:</label><br /> 
+            <input 
+              type="text" 
+              id="budget-range" 
+              name="budget-range" 
+              placeholder="e.g. 50–70 lakhs" 
+            /><br /><br /> 
+ 
+            <label>Looking for:</label><br /> 
+            <input 
+              type="checkbox" 
+              id="chk-sale" 
+              name="looking-for" 
+              value="sale" 
+            /> 
+            <label for="chk-sale">Property for Sale</label><br /> 
+ 
+            <input 
+              type="checkbox" 
+              id="chk-rent" 
+              name="looking-for" 
+              value="rent" 
+            /> 
+            <label for="chk-rent">Property for Rent</label><br /><br /> 
+          </fieldset> 
+          <br /> 
+ 
+          <!-- Message --> 
+          <fieldset> 
+            <legend>Additional Details</legend> 
+ 
+            <label for="message">Your Requirements / Questions:</label><br /> 
+            <textarea id="message" name="message" rows="5" cols="40"></textarea 
+            ><br /><br /> 
+          </fieldset> 
+          <br /> 
+ 
+          <input type="submit" value="Submit Inquiry" /> 
+        </form> 
+      </section> 
+    </main> 
+ 
+    <hr /> 
+ 
+    <!-- Footer --> 
+    <footer> 
+      <p>&copy; 2025 DreamNest Realty. All rights reserved.</p> 
+      <p> 
+        Email: 
+<a href="mailto:info@dreamnestrealty.com">info@dreamnestrealty.com</a> | 
+Phone: +91-98765-00000 
+</p> 
+</footer> 
+</body> 
+</html> 
